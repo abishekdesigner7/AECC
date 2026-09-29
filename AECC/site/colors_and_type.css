@@ -1,0 +1,242 @@
+/* ============================================================
+   AECC — Antros Engineering Construction Company
+   Color + Type tokens
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  /* ---------- Color: Primary (Deep Navy) — authority, engineering ---------- */
+  --navy-900: #0B2E45;
+  --navy-800: #0E3A57;
+  --navy-700: #114E78;
+
+  /* ---------- Color: Accent (Logo Azure) — action, links, CTAs ---------- */
+  --blue-700: #0A5C95;
+  --blue-600: #0E72B8;
+  --blue-100: #D6EAF8;
+  --blue-50:  #EFF6FC;
+
+  /* ---------- Color: Secondary Accent (Amber) — home-services warmth ---------- */
+  --amber-600: #d97706;
+  --amber-500: #f59e0b;
+  --amber-100: #fef3c7;
+
+  /* ---------- Color: Neutrals (Slate) ---------- */
+  --slate-900: #0f172a;
+  --slate-700: #334155;
+  --slate-600: #475569;
+  --slate-500: #64748b;
+  --slate-400: #94a3b8;
+  --slate-300: #cbd5e1;
+  --slate-200: #e2e8f0;
+  --slate-100: #f1f5f9;
+  --slate-50:  #f8fafc;
+  --white:     #ffffff;
+
+  /* ---------- Color: Semantic ---------- */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error:   #ef4444;
+
+  /* ---------- Brand accents — sampled directly from the AECC logo ---------- */
+  --brand-red:        #C0271F;   /* the red "A"   → nav active/hover indicator */
+  --brand-red-strong: #9E1F18;   /* darker red for hover / contrast surfaces  */
+  --brand-blue:       #0E72B8;   /* the blue "ECC" → hero accent words + stats */
+  --brand-blue-deep:  #00628A;   /* deeper azure for borders / hovers          */
+  --brand-blue-ink:   #103B54;   /* deep ocean-blue → hero headline base       */
+
+  /* ---------- Semantic surface + text aliases ---------- */
+  --bg:          #FFFFFF;
+  --bg-alt:      #ffffff;
+  --card:        #EEF3FB;   /* soft tinted card surface */
+  --card-border: #E1E9F5;   /* soft card border */
+  --bg-muted:    var(--slate-100);
+  --bg-dark:     var(--navy-900);
+  --bg-dark-alt: var(--navy-800);
+
+  --fg:          var(--slate-900);   /* body text */
+  --fg-2:        var(--slate-700);   /* secondary text */
+  --fg-muted:    var(--slate-500);   /* labels, captions */
+  --fg-on-dark:  var(--white);
+
+  --border:      var(--slate-200);
+  --border-dark: rgba(255,255,255,0.10);
+
+  --link:        var(--blue-600);
+  --link-hover:  var(--blue-700);
+
+  /* ---------- Type families ---------- */
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body:    "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-stat:    "Barlow Condensed", "Plus Jakarta Sans", system-ui, sans-serif;
+
+  /* ---------- Type scale (desktop) ---------- */
+  --fs-hero-h1:    60px;   --lh-hero-h1:    1.05;   --ls-hero-h1:    -0.02em;
+  --fs-page-h1:    48px;   --lh-page-h1:    1.10;   --ls-page-h1:    -0.02em;
+  --fs-section-h2: 36px;   --lh-section-h2: 1.15;   --ls-section-h2: -0.01em;
+  --fs-card-h3:    20px;   --lh-card-h3:    1.30;   --ls-card-h3:    -0.005em;
+  --fs-eyebrow:    12px;   --lh-eyebrow:    1.00;   --ls-eyebrow:    0.10em;
+  --fs-body-lg:    18px;   --lh-body-lg:    1.60;
+  --fs-body:       16px;   --lh-body:       1.60;
+  --fs-small:      14px;   --lh-small:      1.50;
+  --fs-micro:      12px;   --lh-micro:      1.40;
+
+  /* ---------- Spacing scale (4px base) ---------- */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  12px;
+  --space-base:16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 128px;
+
+  --section-py-mobile:  64px;
+  --section-py-desktop: 96px;
+  --container-max:      1280px;
+  --container-px-mobile:  16px;
+  --container-px-desktop: 32px;
+  --grid-gap:       24px;
+  --grid-gap-lg:    32px;
+
+  /* ---------- Radii ---------- */
+  --radius-sm:  6px;
+  --radius-md:  8px;
+  --radius-lg:  10px;
+  --radius-xl:  14px;
+  --radius-2xl: 18px;
+  --radius-full: 9999px;
+
+  /* ---------- Shadows (kept minimal — engineered, not glossy) ---------- */
+  --shadow-sm:  0 1px 2px rgba(15,23,42,0.04);
+  --shadow-md:  0 4px 16px rgba(15,23,42,0.06);
+  --shadow-lg:  0 8px 24px rgba(15,23,42,0.08);
+  --shadow-cta: 0 2px 8px rgba(15,23,42,0.12);
+
+  /* ---------- Motion ---------- */
+  --ease-out:  cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast:  150ms;
+  --dur:       200ms;
+  --dur-slow:  250ms;
+}
+
+/* ---------- Mobile type overrides ---------- */
+@media (max-width: 768px) {
+  :root {
+    --fs-hero-h1:    40px;
+    --fs-page-h1:    36px;
+    --fs-section-h2: 30px;
+    --fs-card-h3:    18px;
+    --fs-body-lg:    17px;
+    --fs-body:       15px;
+  }
+}
+
+/* ============================================================
+   Base element styles
+   ============================================================ */
+
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+  color: var(--navy-900);
+  margin: 0;
+}
+
+.hero-h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--fs-hero-h1);
+  line-height: var(--lh-hero-h1);
+  letter-spacing: var(--ls-hero-h1);
+}
+.page-h1 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--fs-page-h1);
+  line-height: var(--lh-page-h1);
+  letter-spacing: var(--ls-page-h1);
+}
+.section-h2 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-section-h2);
+  line-height: var(--lh-section-h2);
+  letter-spacing: var(--ls-section-h2);
+}
+.card-h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--fs-card-h3);
+  line-height: var(--lh-card-h3);
+  letter-spacing: var(--ls-card-h3);
+}
+/* Eyebrow — a monospace "index" label with a leading hairline rule.
+   JetBrains Mono in sentence case reads as an editorial spec tag and
+   contrasts with the Plus Jakarta Sans headings (no shouty all-caps). */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--slate-500);
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.55;
+  flex-shrink: 0;
+}
+.body-lg  { font-size: var(--fs-body-lg); line-height: var(--lh-body-lg); }
+.body     { font-size: var(--fs-body);    line-height: var(--lh-body); }
+.small    { font-size: var(--fs-small);   line-height: var(--lh-small);  font-weight: 500; }
+.micro    { font-size: var(--fs-micro);   line-height: var(--lh-micro);  font-weight: 500; }
+.mono     { font-family: var(--font-mono); }
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color var(--dur) var(--ease-out);
+}
+a:hover { color: var(--link-hover); }
+
+/* Accessible focus ring */
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--blue-100);
+  border-radius: var(--radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
